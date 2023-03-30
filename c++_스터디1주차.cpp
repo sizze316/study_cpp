@@ -4,11 +4,13 @@ using namespace std;
 int main() {
 
 	char name[10];
+	char number[20];
 
 	cout << "이름: ";
 	cin.getline(name, 10);
 
-	cout << "학번: 2023" << endl;
+	cout << "학번: ";
+	cin.getline(number, 20);
 
 	cout << "반갑습니다." << name << "님.\n" << endl;
 
@@ -36,7 +38,7 @@ int main() {
 
 	cout << "==============================\n";
 
-	cout << "김 스윙(2023)님의 전체 학점은 " << (((a*3)+(b*3)+(c*1)+(d*2))/9) << "입니다.\n" << endl;
+	cout << name  << "("<< number <<")" << "님의 전체 학점은 " << (((a * 3) + (b * 3) + (c * 1) + (d * 2)) / 9) << "입니다.\n" << endl;
 	
 
 	return 0;
