@@ -24,15 +24,12 @@ int main() {
 	cin >> a;
 
 	cout << "컴퓨터및정보보호개론(3학점): ";
-	cin.ignore();
 	cin >> b;
 
 	cout << "소프트웨어개발실무영어Ⅰ(1학점): ";
-	cin.ignore();
 	cin >> c;
 
 	cout << "대학고급영어(2학점): ";
-	cin.ignore();
 	cin >> d;
 
 
