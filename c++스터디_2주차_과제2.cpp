@@ -26,12 +26,11 @@ int main(void) {
 		cout << "--------------" << endl;
 
 		//for문 이용하여 통로가 있는 비행기 좌석 출력하기
-		int arr[6][10] = { 0, };
+		int seat[6][10] = { 0, };
 
-		for (length = 0; length < 10; length++) {
-			cout << endl;
-			for (width = 0; width < 6; width++) {
-				cout << arr[length] << " "<< arr[width] << " ";
+		for (width = 0; width < 6; width++) {
+			for (length = 0; length < 10; length++) {
+				cout << seat[width][length] << " ";
 			}
 			cout << endl;
 		}
