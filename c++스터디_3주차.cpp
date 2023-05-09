@@ -11,7 +11,7 @@ int main(void) {
 	char loginid[30];
 
 	while (1) {
-		cout << " ********** hg 은행 **********" << endl;
+		cout << " ********** swing 은행 **********" << endl;
 		cout << "1. 회원가입 " << endl;
 		cout << "2. 로그입" << endl;
 		cout << "번호를 입력하세요 >> ";
@@ -40,7 +40,7 @@ int main(void) {
 			cin >> loginpw;
 			cout << endl;
 
-			if (loginpw == pw, loginid==id) {
+			if (loginpw == pw or loginid==id) {
 				cout << "===== 로그인 성공 =====";
 			}
 
