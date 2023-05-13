@@ -43,6 +43,7 @@ int main(void) {
         cin >> a;
 
         if (a == 1) {
+
             cout << endl;
             cout << "이름: ";
             cin >> name;
@@ -57,6 +58,7 @@ int main(void) {
             continue;
         }
         else if (a == 2) {
+
             cout << "아이디: ";
             cin >> loginid;
 
@@ -79,6 +81,7 @@ int main(void) {
         cout << endl;
 
         if (is_logged_in) {
+
             cout << name << "님 환영합니다." << endl;
             cout << endl;
         }
@@ -87,6 +90,7 @@ int main(void) {
     } 
 
             while (1) {
+
                 cout << " **********swing 자산 관리 서비스 **********" << endl;
                 cout << "1. 계좌 정보 출력 " << endl;
                 cout << "2. 총 자산 출력" << endl;
@@ -96,6 +100,7 @@ int main(void) {
                 cin >> b;
 
                 if (b == 1) {
+
                     myaccount(bank_name, bank);
 
                     continue;
@@ -104,7 +109,8 @@ int main(void) {
 
                 else if (b == 2) {
 
-                    int sum = total(bank);
+                   int sum = total(bank);
+
                     cout << endl;
                     cout << "현재 swing 자산관리 서비스에 등록된 회원님의 총 자산은 " << sum << "원 입니다." << endl;
                     cout << endl;
