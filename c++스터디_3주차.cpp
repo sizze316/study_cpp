@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//배열을 사용해서 계좌정보 출력
 void myaccount(string* bank_name, int* bank) {
     cout << "-------------------------- swing 계좌 정보 --------------------------" << endl;
     cout << "|    " << bank_name[0] << "   |    " << bank_name[1] << "   |    " << bank_name[2] << "   |    " << bank_name[3] << "   |" << endl;
@@ -12,6 +13,7 @@ void myaccount(string* bank_name, int* bank) {
     cout << endl;
 }
 
+//배열과 포인터를 사용해서 계좌의 총 자산 출력
 int total(int* bank) {
     int sum = 0;
     for (int q = 0; q < 4; q++) {
@@ -80,6 +82,8 @@ int main(void) {
         }
         cout << endl;
 
+
+        //로그인 성공했을 때만 자산관리 시스템으로 넘어감
         if (is_logged_in) {
 
             cout << name << "님 환영합니다." << endl;
@@ -101,6 +105,7 @@ int main(void) {
 
                 if (b == 1) {
 
+                    // main 함수 밖에서 (위에서) 작성한 함수가 출력됨
                     myaccount(bank_name, bank);
 
                     continue;
