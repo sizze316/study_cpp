@@ -44,7 +44,8 @@ int main(void) {
         cout << "번호를 입력하세요 >> ";
         cin >> a;
 
-        if (a == 1) {
+        // 이름, 아이디, 비밀번호 입력받고 회원가입
+        if (a == 1) { 
 
             cout << endl;
             cout << "이름: ";
@@ -59,6 +60,8 @@ int main(void) {
 
             continue;
         }
+
+        // 위에서 회원가입한 정보로 로그인
         else if (a == 2) {
 
             cout << "아이디: ";
@@ -68,11 +71,14 @@ int main(void) {
             cin >> loginpw;
             cout << endl;
 
+            // 입력한 아이디, 비밀번호와 회원가입 때 입력한 아이디, 비밀번호가 모두 일치해야 로그인 성공
             if (loginpw == pw or loginid == id) {
 
                 is_logged_in = true;
                 cout << "===== 로그인 성공 =====";
             }
+
+            // 입력한 아이디, 비밀번호와 회원가입 때 입력한 아이디, 비밀번호와 하나라도 다를 경우 로그인 실패
             else if (loginpw != pw and loginid != id) {
 
                 is_logged_in = false;
@@ -93,6 +99,7 @@ int main(void) {
         break;
     } 
 
+            // 자산관리 서비스 메뉴 출력
             while (1) {
 
                 cout << " **********swing 자산 관리 서비스 **********" << endl;
@@ -111,7 +118,7 @@ int main(void) {
                     continue;
                 }
 
-
+                // 위에서 작성한 함수의 합을 가져옴
                 else if (b == 2) {
 
                    int sum = total(bank);
@@ -124,6 +131,7 @@ int main(void) {
 
                 }
 
+                //로그아웃
                 else if (b == 3) {
 
                     cout << endl << "===== 로그아웃 =====" << endl;
